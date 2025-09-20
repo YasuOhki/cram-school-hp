@@ -1,0 +1,94 @@
+@import url("common.css");
+/*----------------------------------------
+	Header
+----------------------------------------*/
+.header {
+  background-color: var(--c_main);
+  height: 52px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 52px;
+  height: auto;
+  margin: 0 20px;
+  padding: 8px;
+}
+
+.header__nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header__nav {
+    display: flex;
+  }
+}
+
+.header__nav-item {
+  padding: 16px;
+  color: var(--c_black);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: var(--c_sub);
+  border: none;
+  gap: 8px;
+}
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger__line {
+  width: 32px;
+  border: 1px solid var(--c_main);
+}
+
+/*----------------------------------------
+	Main Content
+----------------------------------------*/
+.mainContent {
+  background-color: var(--c_white);
+  margin-bottom: 52px;
+  padding: 0 20px;
+}
+
+/*----------------------------------------
+	Main Visual
+----------------------------------------*/
+.mainVisual {
+  background-color: var(--c_sub);
+  height: 200px;
+  margin: 0 -20px;
+}
+
+/*----------------------------------------
+	Contact
+----------------------------------------*/
+.contact {
+  margin-top: 40px;
+}
+
+/*----------------------------------------
+	Footer
+----------------------------------------*/
+.footer {
+  background-color: var(--c_dark-gray);
+  height: 60px;
+}/*# sourceMappingURL=index.css.map */

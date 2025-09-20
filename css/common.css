@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*----------------------------------------
+	Variables
+----------------------------------------*/
+:root {
+    --c_main: #5c73b7;
+    --c_sub: #8490c8;
+    --c_black: #333333;
+    --c_yellow: #fff56c;
+    --c_orange: #fdbf64;
+    --c_dark-gray: #707070;
+    --c_light-gray: #EEEEEE;
+    --c_white: #FFFFFF;
+  }
+/*----------------------------------------
+	Section
+----------------------------------------*/
+section {
+    margin-top: 40px;
+}
+.section__title {
+    font-size: 24px;
+}
