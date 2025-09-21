@@ -12,7 +12,8 @@
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                <img src="/image/logo.svg" width="48" height="48" alt="きらめき学習塾">
+                <img class="header__logo-image" src="/image/logo.svg" width="48" height="48" alt="きらめき学習塾">
+                <p class="header__logo-text">きらめき学習塾</p>
             </div>
             <nav class="header__nav">
                 <a href="#about" class="header__nav-item">塾について</a>
@@ -37,60 +38,71 @@
 
         <section class="contact">
             <h2 class="section__title">授業を見学してみよう！</h2>
-            <button class="btn__seikyu"><a class="btn__seikyu-link" href="/">資料を請求する</a></button>
-            <button class="btn__kengaku"><a class="btn__kengaku-link" href="/">見学を予約する</a></button>
-            <button class="btn__price"><a class="btn__price-link" href="/">授業料をチェックする</a></button>
-            <p class="contact__phone">電話で問い合わせる</p>>
-            <a class="contact__phone-link" href="/">0120-123-456</a>
+            <div class="contact__buttons">
+                <button class="contact__btn contact__seikyu"><a class="contact__link contact__seikyu-link" href="/">資料を請求する</a></button>
+                <button class="contact__btn contact__kengaku"><a class="contact__link contact__kengaku-link" href="/">見学を予約する</a></button>
+                <button class="contact__btn contact__price"><a class="contact__link contact__price-link" href="/">授業料をチェックする</a></button>
+            </div>
+            <div class="contact__phone">
+                <p class="contact__phone-title">電話で問い合わせる</p>
+                <a class="contact__phone-link" href="/">0120-123-456</a>
+            </div>
         </section>
+        <div class="divider"></div>
 
-        <section class="Features">
+        <section class="features">
             <h2 class="section__title">当塾の特徴</h2>
-            <ul class="Features__list">
-                <li class="Features__item">
-                    <h3 class="Features__item-title">学習習慣が身に付く</h3>
-                    <p class="Features__item-description">家だけでは続かない学習が「当たり前に」続くようになります</p>
+            <ul class="item-list features__list">
+                <li class="item-info features__item">
+                    <h3 class="item-title features__item-title">学習習慣が身に付く</h3>
+                    <p class="features__item-description">家だけでは続かない学習が「当たり前に」続くようになります</p>
                 </li>
-                <li class="Features__item">
-                    <h3 class="Features__item-title">勉強の楽しさが分かる</h3>
-                    <p class="Features__item-description">学校の授業が分かるような指導なので、「勉強は楽しいもの」と感じることができます</p>
+                <li class="item-info features__item">
+                    <h3 class="item-title features__item-title">勉強の楽しさが分かる</h3>
+                    <p class="features__item-description">学校の授業が分かるような指導なので、「勉強は楽しいもの」と感じることができます</p>
                 </li>
-                <li class="Features__item">
-                    <h3 class="Features__item-title">中学校に行っても大丈夫</h3>
-                    <p class="Features__item-description">中学校に進学して授業の難易度が上がっても問題ない「学習の土台」を作ります</p>
+                <li class="item-info features__item">
+                    <h3 class="item-title features__item-title">中学校に行っても大丈夫</h3>
+                    <p class="features__item-description">中学校に進学して授業の難易度が上がっても問題ない「学習の土台」を作ります</p>
                 </li>
             </ul>
         </section>
+        <div class="divider"></div>
 
         <section class="curriculum">
             <h2 class="section__title">カリキュラム例</h2>
-            <ul class="curriculum__list">
-                <li class="curriculum__item">
-                    <h3 class="curriculum__item-title">国語</h3>
+            <ul class="item-list curriculum__list">
+                <li class="item-info curriculum__item">
+                    <h3 class="item-title curriculum__item-title">国語</h3>
                     <p class="curriculum__item-description">文章を正しく理解し、自分の考えをまとめる力を身につけます</p>
                 </li>
-                <li class="curriculum__item">
-                    <h3 class="curriculum__item-title">算数</h3>
+                <li class="item-info curriculum__item">
+                    <h3 class="item-title curriculum__item-title">算数</h3>
                     <p class="curriculum__item-description">計算だけでなく、文章題・図形問題の思考力を身につけます</p>
                 </li>
-                <li class="curriculum__item">
-                    <h3 class="curriculum__item-title">英語</h3>
+                <li class="item-info curriculum__item">
+                    <h3 class="item-title curriculum__item-title">英語</h3>
                     <p class="curriculum__item-description">中学校での学習にスムーズにつながる基本的な英単語や表現を身につけます</p>
                 </li>
             </ul>
         </section>
+        <div class="divider"></div>
 
         <section class="contact">
             <h2 class="section__title">授業を見学してみよう！</h2>
-            <button class="btn__seikyu"><a class="btn__seikyu-link" href="/">資料を請求する</a></button>
-            <button class="btn__kengaku"><a class="btn__kengaku-link" href="/">見学を予約する</a></button>
-            <button class="btn__price"><a class="btn__price-link" href="/">授業料をチェックする</a></button>
-            <p class="contact__phone">電話で問い合わせる</p>>
-            <a class="contact__phone-link" href="/">0120-123-456</a>
+            <div class="contact__buttons">
+                <button class="contact__btn contact__seikyu"><a class="contact__link contact__seikyu-link" href="/">資料を請求する</a></button>
+                <button class="contact__btn contact__kengaku"><a class="contact__link contact__kengaku-link" href="/">見学を予約する</a></button>
+                <button class="contact__btn contact__price"><a class="contact__link contact__price-link" href="/">授業料をチェックする</a></button>
+            </div>
+            <div class="contact__phone">
+                <p class="contact__phone-title">電話で問い合わせる</p>
+                <a class="contact__phone-link" href="/">0120-123-456</a>
+            </div>
         </section>
     </div>
     <footer class="footer">
-        <p>&copy; 2024 きらめき学習塾. All rights reserved.</p>
+        <p class="footer__copyright">&copy; 2024 きらめき学習塾. All rights reserved.</p>
     </footer>
 
 </body>

@@ -4,7 +4,8 @@
 	Header
 ----------------------------------------*/
 .header {
-    background-color: var(--c_main);
+    background-color: var(--c_white);
+    border-bottom: 1px solid var(--c_light-gray);
     height: 52px;
 }
 .header__container {
@@ -12,10 +13,20 @@
     justify-content: space-between;
 }
 .header__logo {
-    width: 52px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 200px;
     height: auto;
-    margin: 0 20px;
+    margin: 0 8px;
+}
+.header__logo-image {
     padding: 8px;
+}
+.header__logo-text {
+    color: var(--c_main);
+    font-size: 18px;
+    font-weight: bold;
 }
 .header__nav {
     display: none;
@@ -40,7 +51,7 @@
     height: 52px;
     padding: 8px;
     cursor: pointer;
-    background-color: var(--c_sub);
+    background-color: var(--c_main);
     border: none;
     gap: 8px;
 
@@ -50,7 +61,7 @@
 }
 .hamburger__line {
     width: 32px;
-    border: 1px solid var(--c_main);
+    border: 1px solid var(--c_white);
 }
 
 /*----------------------------------------
@@ -66,7 +77,7 @@
 ----------------------------------------*/
 .mainVisual {
     background-color: var(--c_sub);
-    height: 200px;
+    height: 320px;
     margin: 0 -20px;
 }
 /*----------------------------------------
@@ -75,10 +86,56 @@
 .contact {
     margin-top: 40px;
 }
+.contact__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.contact__btn {
+    width: 80%;
+    min-width: 100px;
+    border: 1px solid var(--c_yellow);
+    background-color: var(--c_yellow);
+    border-radius: 16px;
+    padding: 8px;
+    // TODO: ボタンに影をつける
+}
+.contact__link {
+    text-decoration: none;
+    color: var(--c_black);
+}
+.contact__phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+.contact__phone-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--c_black);
+}
+.contact__phone-link {
+    font-size: 20px;
+    color: var(--c_orange);
+}
+/*----------------------------------------
+	features
+----------------------------------------*/
+
 /*----------------------------------------
 	Footer
 ----------------------------------------*/
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--c_dark-gray);
     height: 60px;
+}
+.footer__copyright {
+    color: var(--c_white);
+    font-size: 14px;
 }
