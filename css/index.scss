@@ -44,7 +44,6 @@
 }
 .hamburger {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 52px;
@@ -53,15 +52,14 @@
     cursor: pointer;
     background-color: var(--c_main);
     border: none;
-    gap: 8px;
 
     @media (min-width: 768px) {
         display: none;
     }
 }
-.hamburger__line {
+.hamburger__icon {
     width: 32px;
-    border: 1px solid var(--c_white);
+    height: 32px;
 }
 
 /*----------------------------------------
