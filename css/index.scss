@@ -61,7 +61,6 @@
     width: 32px;
     height: 32px;
 }
-
 /*----------------------------------------
 	Main Content
 ----------------------------------------*/
@@ -97,7 +96,10 @@
     background-color: var(--c_yellow);
     border-radius: 16px;
     padding: 8px;
-    // TODO: ボタンに影をつける
+    box-shadow: 2px 2px var(--c_dark-gray);
+    &:hover {
+        background-color: var(--c_dark-yellow);
+    }
 }
 .contact__link {
     text-decoration: none;

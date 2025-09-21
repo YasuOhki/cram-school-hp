@@ -7,6 +7,7 @@
     --c_sub: #8490c8;
     --c_black: #333333;
     --c_yellow: #fff56c;
+    --c_dark-yellow: #e5e500;
     --c_orange: #fdbf64;
     --c_dark-gray: #707070;
     --c_gray: #999999;
@@ -24,6 +25,7 @@ section {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 24px;
+    text-decoration: underline 4px solid var(--c_yellow) ;
 }
 /*----------------------------------------
 	component
@@ -35,7 +37,7 @@ section {
 }
 .item-info {
     border: 1px solid var(--c_gray);
-    border-radius: 16px;
+    border-radius: 8px;
     padding: 16px;
 }
 .item-title {
