@@ -3,9 +3,14 @@
 	Header
 ----------------------------------------*/
 .header {
-  background-color: var(--c_white);
-  border-bottom: 1px solid var(--c_light-gray);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   height: 52px;
+  background-color: var(--c_white);
+  box-shadow: 1px 1px var(--c_gray);
 }
 
 .header__container {
@@ -84,9 +89,55 @@
 	Main Visual
 ----------------------------------------*/
 .mainVisual {
-  background-color: var(--c_sub);
-  height: 320px;
+  max-height: 400px;
   margin: 0 -20px;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+  width: 100%;
+  height: auto;
+}
+
+.mainVisual__item {
+  width: 100%;
+  height: auto;
+}
+
+.mainVisual__item img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.mainVisual__pagination-wrap {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.mainVisual__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.mainVisual__pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mainVisual__pagination .swiper-pagination-bullet-active {
+  background-color: var(--c_yellow);
 }
 
 /*----------------------------------------
@@ -104,8 +155,9 @@
 }
 
 .contact__btn {
-  width: 80%;
-  min-width: 100px;
+  width: 100%;
+  min-width: 200px;
+  max-width: 400px;
   border: 1px solid var(--c_yellow);
   background-color: var(--c_yellow);
   border-radius: 16px;

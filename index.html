@@ -6,7 +6,9 @@
     <title>きらめき学習塾 | 小学生専門の学習塾</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/hamburger-toggle.js"></script>
 </head>
 <body>
@@ -14,17 +16,16 @@
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                <img class="header__logo-image" src="/image/logo.svg" width="48" height="48" alt="きらめき学習塾">
+                <img class="header__logo-image" src="image/icon/logo.svg" width="48" height="48" alt="きらめき学習塾">
                 <p class="header__logo-text">きらめき学習塾</p>
             </div>
             <nav class="header__nav">
-                <a href="#about" class="header__nav-item">塾について</a>
-                <a href="#courses" class="header__nav-item">コース</a>
-                <a href="#features" class="header__nav-item">特徴</a>
+                <a href="#features" class="header__nav-item">当塾の特徴</a>
+                <a href="#curriculum" class="header__nav-item">カリキュラム例</a>
                 <a href="#contact" class="header__nav-item">お問い合わせ</a>
             </nav>
             <button class="hamburger">
-                <img src="image/hamburger-menu.svg" alt="メニュー" class="hamburger__icon">
+                <img src="image/icon/hamburger-menu.svg" alt="メニュー" class="hamburger__icon">
             </button>
         </div>
     </header>
@@ -32,12 +33,28 @@
     <!-- コンテンツ -->
      <div class="mainContent">
         <!-- メインビジュアル -->
-        <div class="mainVisual">
-            TODO: 画像を追加
+        <div class="mainVisual swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide mainVisual__item">
+                    <img src="image/mainVisual/instruction.jpg" alt="指導の様子">
+                </div>
+                <div class="swiper-slide mainVisual__item">
+                    <img src="image/mainVisual/school.jpg" alt="学校の授業が理解できる">
+                </div>
+                <div class="swiper-slide mainVisual__item">
+                    <img src="image/mainVisual/men.jpg" alt="男子生徒が学習している様子">
+                </div>
+                <div class="swiper-slide mainVisual__item">
+                    <img src="image/mainVisual/women.jpg" alt="女子生徒が学習している様子">
+                </div>
+            </div>
+            <div class="mainVisual__pagination-wrap">
+                <div class="mainVisual__pagination"></div>
+            </div>
         </div>
 
         <section class="contact">
-            <h2 class="section__title">授業を見学してみよう！</h2>
+            <h2 class="section__title" id="contact">授業を見学してみよう！</h2>
             <div class="contact__buttons">
                 <button class="contact__btn contact__seikyu"><a class="contact__link contact__seikyu-link" href="/">資料を請求する</a></button>
                 <button class="contact__btn contact__kengaku"><a class="contact__link contact__kengaku-link" href="/">見学を予約する</a></button>
@@ -50,7 +67,7 @@
         </section>
         <div class="divider"></div>
 
-        <section class="features">
+        <section class="features" id="features">
             <h2 class="section__title">当塾の特徴</h2>
             <ul class="item-list features__list">
                 <li class="item-info features__item">
@@ -69,7 +86,7 @@
         </section>
         <div class="divider"></div>
 
-        <section class="curriculum">
+        <section class="curriculum" id="curriculum">
             <h2 class="section__title">カリキュラム例</h2>
             <ul class="item-list curriculum__list">
                 <li class="item-info curriculum__item">
@@ -104,6 +121,32 @@
     <footer class="footer">
         <p class="footer__copyright">&copy; 2024 きらめき学習塾. All rights reserved.</p>
     </footer>
+    <script>
+        $(function () {
+            checkHeaderFixed();
+    
+            let swiper_slide = new Swiper(".mainVisual", {
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                effect: "fade",
+                fadeEffect: {
+                    crossFade: true
+                },
+                speed: 1000,
+                pagination: {
+                    el: ".mainVisual__pagination",
+                    type: "bullets",
+                    clickable: true
+                }
+            });
+        });
 
+        $(window).scroll(function () {
+            checkHeaderFixed();
+        });
+    </script>
 </body>
 </html>
