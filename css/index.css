@@ -96,8 +96,6 @@
 
 .swiper-wrapper {
   transition-timing-function: linear;
-  width: 100%;
-  height: auto;
 }
 
 .mainVisual__item {
